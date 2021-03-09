@@ -1,0 +1,572 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+.nav-link {
+	font-size: 9px;
+}
+.navbar ul {
+	margin: 13px 0 0;
+}
+.carousel-control-prev {
+	left: -60px;
+}
+.picture1 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	left: 290px;
+	top: -20px;
+}
+.picture2 {
+	z-index: 99999;
+	max-width: 33.33%;
+	position: absolute;
+	top: -23px;
+}
+.picture3 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	right: 288px;
+	top: -25px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.navigation-menu {
+	display: block;
+}
+.burger-menu_button {
+	display: block;
+}
+.burger-menu_wrapper {
+	top: 100%;
+	position: absolute;
+}
+.contact-numbers {
+	margin: 0 12px 0 0px;
+
+}
+.header-introducing-words h1 {
+	font-size: 64px;
+		
+}
+.header-introducing-words h2 {
+	font-size: 44px;
+}
+
+	/* Наши преимущества */
+
+.special_class .col-md-6:last-child {
+	max-width: 100%;
+	flex: 100%;
+}
+.burger-menu_wrapper {		
+	display: block;
+}
+.nav-link {
+	padding-left: 15px !important;
+	padding-right: 15px !important; 
+}
+.nav-link:hover {
+	background: rgba(255, 255, 255, 0.14);
+	color: #ffffff;	
+	border-radius: 4px;
+}
+.active {
+	background: rgba(255, 255, 255, 0.14);
+	color: #ffffff;	
+	border-radius: 4px;
+
+}
+.advantage-item {
+	height: 95%;
+}
+
+	/* Переезд в Болгарию */
+
+.move-data-introducing-words3 {
+	margin-top: 39px;
+}
+.move-data-introducing-words2 p {
+	margin-top: 30px;
+}
+.border-item {
+	text-align: center;
+}
+.border-item-top {
+	margin-bottom: -56px
+}
+.border-item-bottom {
+	left: 325px;
+}
+.move-data-introducing-words2 p {
+	padding: 0 15px;
+}
+
+	/* "Наши услуги" */
+
+.services-item-pictures {
+	padding: 0;
+}
+.picture1 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	left: 28px;
+	top: -20px;
+}
+.picture2 {
+	z-index: 99999;
+	max-width: 33.33%;
+	position: absolute;
+	top: -23px;
+}
+.picture3 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	right: 30px;
+	top: -25px;
+}
+
+	/* "Отзывы" */
+
+.carousel-indicators {
+	top: 315px;
+}
+.comments-field {
+	padding-left: 0;
+}
+.diana-photo {
+	margin-left: 20px;
+}
+.dianas-comment {
+	margin-left: 35px;
+}
+.srelka-comment {
+	padding-top: 60px;
+}
+.dianas-comment span {
+	margin: 5px 0 22px;
+}
+.dianas-comment p {
+	padding: 0 110px 0 0;
+}
+.pagination-circles {
+	margin-top: 80px;
+}
+
+.carousel-control-prev {
+	left: -60px;
+}
+
+	
+
+.footer-phone, .footer-numbers {
+	display: none;
+}
+.all-rights-reserved p {
+	margin: auto;
+}
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+.contact-numbers, .contacts-phone {
+	display: none;
+}
+.header-introducing-words h1 {
+	font-size: 47px;
+}
+.header-introducing-words h2 {
+	font-size: 33px;
+}
+
+		/* Burger menu */
+
+.burger-menu_wrapper {
+	display: block;
+	max-width: 100%;
+	top: 100%;
+	position: absolute;
+}
+.header-introducing-words h1 {
+	font-size: 38px;
+	letter-spacing: 10px;	
+}
+.header-introducing-words h2 {
+	font-size: 22px;	
+}
+.nav-link:hover {
+	background: rgba(255, 255, 255, 0.14);
+	color: #ffffff;	
+	border-radius: 4px;
+}
+
+.burger-menu_button {
+	display: block;
+}
+.nav-link {
+	padding-left: 15px !important;
+	padding-right: 15px !important; 
+}
+
+	/* Секция "Наши преимущества" */
+
+.advantage-introducing-words h2 {
+    font-size: 34px;
+}
+.advantage-item {
+	height: auto;
+	padding-bottom: 60px;
+	margin: 7.5px;
+}
+
+	/* "Переезд в болгарию" */
+
+.move-data-introducing-words2 p {
+	padding: 0 20px;
+	margin-top: 30px; 
+}
+.border-item {
+	text-align: center;
+}
+.border-item-top {
+	margin-bottom: -17px;
+}
+.border-item-bottom {
+	margin-top: -17px;
+}
+.move-data-introducing-words1 h2 {
+    font-size: 35px;
+}
+.move-data-button {
+    padding: 12px 30px;
+}
+.move-data-introducing-words3 {
+	padding-left: 48px;
+	padding-right: 52px;
+}
+
+	/* "Наши услуги" */
+
+.services-items {
+	margin: 100px 0 0;
+}
+.services-introducing-words h2 {
+    font-size: 32px;
+}
+.picture1 img {
+	max-width: 100%;
+}
+.picture2 img {
+	max-width: 100%;
+}
+.picture3 img {
+	max-width: 100%;
+}
+.picture1 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	left: 78px;
+	top: -20px;
+}
+.picture2 {
+	z-index: 99999;
+	max-width: 33.33%;
+	position: absolute;
+	top: -23px;
+}
+.picture3 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	right: 82px;
+	top: -25px;
+}
+.services-text {
+    padding: 70px 15px 43px;
+}
+
+	/* "Отзывы" */
+
+.srelka-comment {
+	display: none;
+}
+.comments-field {
+	padding: 35px 0 0;
+	flex-direction: column;
+	justify-content: center;
+}
+.diana-photo {
+	margin: 0;
+	text-align: center;
+}
+.comment-main-text h2 {
+    font-size: 34px;
+}
+.dianas-comment {
+	margin: 0;
+	flex-direction: column;
+}
+.dianas-comment h3 {
+	padding: 0;
+	text-align: center;
+	margin: 20px 0 0;
+}
+.dianas-comment a {
+	padding: 0;
+	text-align: center;
+	margin: 15px 0 0;
+}
+.dianas-comment span {
+	padding: 0;
+	text-align: center;
+}
+.dianas-comment p {
+	padding: 0;
+	text-align: center;
+	margin: 22px 0 0;
+}
+.pagination-circles {
+	margin: 64px 0 0;
+}
+.carousel-indicators {
+	display: none;
+}
+
+	
+
+.question-main-words div h2 {
+	font-size: 42px;
+}
+.question-sub-words p {
+	font-size: 21px;
+	padding: 0;
+}
+.all-rights-reserved {
+	display: flex;
+	justify-content: flex-end;
+}
+.footer-logo {
+	width: 90%;
+}
+.footer-logo img {
+	max-width: 100%;
+}
+
+.footer-phone, .privacy-and-policy {
+	display: none;
+}
+.footer-numbers {
+	display: none;
+}
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+.contact-numbers, .contacts-phone {
+	display: none;
+}
+.header-introducing-words h1 {
+	font-size: 47px;
+}
+.header-introducing-words h2 {
+	font-size: 33px;
+}
+
+		/* Burger menu */
+
+.burger-menu_wrapper {
+	display: block;
+	max-width: 100%;
+	top: 100%;
+	position: absolute;
+}
+.header-introducing-words h1 {
+	font-size: 38px;
+	letter-spacing: 10px;	
+}
+.header-introducing-words h2 {
+	font-size: 22px;	
+}
+.nav-link:hover {
+	background: rgba(255, 255, 255, 0.14);
+	color: #ffffff;	
+	border-radius: 4px;
+}
+
+.burger-menu_button {
+	display: block;
+}
+.nav-link {
+	padding-left: 15px !important;
+	padding-right: 15px !important; 
+}
+
+	/* Секция "Наши преимущества" */
+
+.advantage-introducing-words h2 {
+    font-size: 34px;
+}
+.advantage-item {
+	height: auto;
+	padding-bottom: 60px;
+	margin: 7.5px;
+}
+
+	/* "Переезд в болгарию" */
+
+.move-data-introducing-words2 p {
+	padding: 0 20px;
+	margin-top: 30px; 
+}
+.border-item {
+	text-align: center;
+}
+.border-item-top {
+	margin-bottom: -17px;
+}
+.border-item-bottom {
+	margin-top: -17px;
+}
+.move-data-introducing-words1 h2 {
+    font-size: 35px;
+}
+.move-data-button {
+    padding: 12px 30px;
+}
+.move-data-introducing-words3 {
+	padding-left: 48px;
+	padding-right: 52px;
+}
+
+	/* "Наши услуги" */
+
+.services-items {
+	margin: 100px 0 0;
+}
+.services-introducing-words h2 {
+    font-size: 32px;
+}
+.picture1 img {
+	max-width: 100%;
+}
+.picture2 img {
+	max-width: 100%;
+}
+.picture3 img {
+	max-width: 100%;
+}
+.picture1 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: unset !important;
+	left: 78px;
+	top: -100px;
+}
+.picture2 {
+	z-index: 99999;
+	max-width: 33.33%;
+	position: unset !important;
+	top: -90px;
+}
+.picture3 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: unset !important;
+	right: 82px;
+	top: -25px;
+}
+.services-text {
+    padding: 70px 15px 43px;
+}
+.services-text-top {
+	margin-top: 0;
+}
+
+	/* "Отзывы" */
+
+.srelka-comment {
+	display: none;
+}
+.comments-field {
+	padding: 35px 0 0;
+	flex-direction: column;
+	justify-content: center;
+}
+.diana-photo {
+	margin: 0;
+	text-align: center;
+}
+.comment-main-text h2 {
+    font-size: 34px;
+}
+.dianas-comment {
+	margin: 0;
+	flex-direction: column;
+}
+.dianas-comment h3 {
+	padding: 0;
+	text-align: center;
+	margin: 20px 0 0;
+}
+.dianas-comment a {
+	padding: 0;
+	text-align: center;
+	margin: 15px 0 0;
+}
+.dianas-comment span {
+	padding: 0;
+	text-align: center;
+}
+.dianas-comment p {
+	padding: 0;
+	text-align: center;
+	margin: 22px 0 0;
+}
+.pagination-circles {
+	margin: 64px 0 0;
+}
+.carousel-indicators {
+	display: none;
+}
+
+	
+
+.question-main-words div h2 {
+	font-size: 42px;
+}
+.question-sub-words p {
+	font-size: 21px;
+	padding: 0;
+}
+.all-rights-reserved {
+	display: flex;
+	justify-content: flex-end;
+}
+.all-rights-reserved p {
+    font-size: 10px;
+}
+.footer-logo {
+	width: 90%;
+}
+.footer-logo img {
+	max-width: 100%;
+}
+
+.footer-phone, .privacy-and-policy {
+	display: none;
+}
+.footer-numbers {
+	display: none;
+}
+
+}

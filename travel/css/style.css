@@ -1,0 +1,631 @@
+@font-face {
+	font-family: 'Museo';
+	src: url('../fonts/museo/MuseoSansCyrl-100.eot');
+	src: local('../fonts/museo/MuseoSansCyrl-100'),
+		url('../fonts/museo/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/museo/MuseoSansCyrl-100.woff') format('woff'),
+		url('../fonts/museo/MuseoSansCyrl-100.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Museo';
+	src: url('../fonts/museo/MuseoSansCyrl-100Italic.eot');
+	src: local('../fonts/museo/MuseoSansCyrl-100Italic'),
+		url('../fonts/museo/MuseoSansCyrl-100Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/museo/MuseoSansCyrl-100Italic.woff') format('woff'),
+		url('../fonts/museo/MuseoSansCyrl-100Italic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Museo';
+	src: url('../fonts/museo/MuseoSansCyrl-300.eot');
+	src: local('../fonts/museo/MuseoSansCyrl-300'),
+		url('../fonts/museo/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/museo/MuseoSansCyrl-300.woff') format('woff'),
+		url('../fonts/museo/MuseoSansCyrl-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo';
+	src: url('../fonts/museo/MuseoSansCyrl-900.eot');
+	src: local('../fonts/museo/MuseoSansCyrl-900'),
+		url('../fonts/museo/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/museo/MuseoSansCyrl-900.woff') format('woff'),
+		url('../fonts/museo/MuseoSansCyrl-900.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+html, body {
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	font-family: Museo;
+}
+
+/* header */
+
+
+header {
+	background: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+	position: relative; 
+	background-size: cover;
+}
+.background-header {
+	background: #004b6a;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .7;
+}
+.container {
+	position: relative;
+}
+.column-class {
+	position: unset;
+}
+.top-navigation-wrapper {
+	max-width: 100%;
+	background: #1f4d64;
+}
+.logo-wrapper {
+	background-color: #23aae2;
+	padding: 10.6px 0;
+}
+.logo-wrapper a {
+	max-width: 100%;
+}
+.logo-wrapper img {
+	max-width: 100%;
+}
+.menu-block {
+	display: none; 
+}
+.nav-link {
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #ffffff;
+	font-family: Museo;
+	font-weight: bold;
+}
+.nav-link:hover {
+	background: rgba(255, 255, 255, 0.14);
+	color: #ffffff;	
+	border-radius: 4px;
+}
+.active {
+	background: rgba(255, 255, 255, 0.14);
+	color: #ffffff;	
+	border-radius: 4px;
+}
+.navbar {
+	position: unset;
+}	
+.navbar ul {
+	margin: 18px 0 0;
+}
+.burger-menu_wrapper {
+	width: 94.5%;
+	left: 15px;
+	z-index: 999999;
+	background: #004b6a;
+	padding-bottom: 10px;
+}
+
+.burger-menu_wrapper ul li {
+	text-align: center;
+	margin: 0 auto;
+}	
+.burger-menu_button {
+	border: none;
+	display: none;
+}
+.burger-menu_nav {
+	justify-content: flex-end;
+}
+.burger-menu_link {
+	color: #ffffff  !important; 
+}.burger-menu_column {
+	height: 0;
+}
+.contacts-phone {
+	margin: 0 10px 0 0;
+}
+.contacts-phone img {
+	border: 2px dotted #23aae2;
+	border-radius: 180px; 
+	padding: 6.5px;
+}
+.contact-numbers {
+	margin: 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: Museo;
+	font-weight: bold;
+}	
+.contact-numbers a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.header-introducing-words h1 {
+	font-size: 90px;
+	color:#ffffff;
+	margin: 190px 0 0;
+	font-family: Museo;
+	font-weight: bold;
+	letter-spacing: 20px;
+}
+.header-introducing-words h2 {
+	font-size: 51px;
+	color: #ffffff;
+	font-family: Museo;
+	font-weight: bold;
+	letter-spacing: 5px;
+}	
+.button-down {
+	text-align: center;
+	margin: 160px 0 0;
+}
+.button-down button {
+	border: 2px #ffffff dotted;
+	border-radius: 180px;
+	padding: 10px 12.5px;
+	background-color: #004b6a;
+}
+.btn-down:hover {
+	opacity: .7;
+}
+
+/* Our advantages section */
+
+.our-advantages {
+	padding-bottom: 93px;
+}
+.advantage-introducing-words {
+	text-align: center;
+	margin: 85px 0 0;
+}
+.advantage-introducing-words h2 {
+	font-size: 42px;
+	color: #000000;
+	font-weight: bold;
+}
+.advantage-items {
+	margin: 60px 0 0;
+}
+.advantage-item {
+	background-color: #f4f4f4;
+	padding: 58px 20px 0;
+	margin: 60px 0 0;
+	height: 100%;
+}
+.advantage-item h3 {
+	color: #000000;
+	font-size: 20px;
+	margin: 29px 0 0;
+	font-weight: bold;
+}
+.advantage-item p {
+	color: #000000;
+	font-size: 17px;
+	font-family: Museo;
+	font-weight: 200;
+}
+.advantage-item span {
+	border: 1px solid #c6c6c6;
+	width: 36px;
+	margin: 17px auto;
+}
+
+
+/* Секция "Переезд в Болгарию" */
+
+.move-data {
+	background: url('../img/sectionbackground.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 100px; 
+	position: relative;
+}
+.background-section_2 {
+	background: #0e2a41;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: .8;
+}
+.move-data-introducing-words1 h2 {
+	font-size: 42px;
+	margin: 90px 0 0;
+	font-weight: bold;
+	color: #ffffff;
+}
+.move-data-introducing-words2 p {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: Museo;
+	font-weight: 100;
+	font-style: italic;
+}
+.move-data-introducing-words2 span {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Museo;
+	font-weight: bold;
+}
+.border-item-top {
+	text-align: center;
+	margin-bottom: -17px;
+
+}
+.border-item-bottom {
+	text-align: center;
+	margin-top: -17px;
+}
+.border-item img {
+	border: 1px #ffffff dotted;
+	border-radius: 180px;
+	padding: 14px 11px 12px;
+	background-color: #0e2a41;
+}
+.move-data-introducing-words3 {
+	border: dotted 1px #ffffff;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+.move-data-introducing-words3 h3 {
+	color: #ffffff;
+	font-size: 23px;
+	font-weight: bold;
+	margin: 0 0 7px;
+}
+.move-data-introducing-words3 p {
+	color: #ffffff;
+	font-size: 19px;
+	font-family: Museo;
+	font-weight: 200;
+	margin: 7px 0 0;
+}
+.move-data-introducing-words4 {
+	margin: 75px 0 45px;
+}
+.move-data-introducing-words4 h4 {
+	color: #ffffff;
+	font-size: 37px;
+	font-weight: bold;
+}
+.move-data-introducing-words4 p {
+	color: #ffffff;
+	font-size: 18px;
+	font-family: Museo;
+	font-weight: 200;
+}
+.button-wrapper {
+	text-align: center;
+}
+.move-data-button {
+    background-color: transparent;
+    border: 2px #ffffff solid;
+	border-radius: 2px;
+    color: white;
+    padding: 22px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Museo;
+    font-weight: bold;
+    cursor: pointer;
+}
+.move-data-button:hover {
+	opacity: .7;
+}
+
+	/* Секция "Наши услуги" */
+
+.services-section {
+	background: url('../img/city.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 0; 
+}
+.services-introducing-words h2 {
+	color: #000000;
+	font-size: 42px;
+	margin: 105px 0 0;
+	font-weight: bold;
+}
+.services-items {
+	margin: 55px 0 0;
+}
+.services-item-pictures {
+	position: relative;
+}
+.picture1 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	left: 381px;
+	top: -20px;
+}
+.picture2 {
+	z-index: 99999;
+	max-width: 33.33%;
+	position: absolute;
+	top: -23px;
+}
+.picture3 {
+	z-index: -1;
+	max-width: 33.33%;
+	position: absolute;
+	right: 397px;
+	top: -25px;
+}
+.picture1 img {
+	margin: 48px 0 0 0px;
+	
+}
+.picture2 img {
+	margin: 0;
+	
+}
+.picture3 img {
+	margin: 48px 0 0;
+}
+.services-text {
+	z-index: 1;
+	background: #f4f4f4;
+	padding: 70px 40px 43px 65px;
+}
+.services-text-top {
+	margin-top: 84px;
+}
+.services-text h3 {
+	font-weight: bold;
+	font-size: 20px;
+}
+.services-text p {
+	font-family: Museo;
+	font-weight: 100;
+	font-size: 17px;
+}
+.blueball {
+	z-index: 999999;
+	margin: -30px auto 0;
+}
+.services-text-bottom {
+	margin-top: -20px;
+}
+
+.services-button-wrapper {
+	padding: 60px 0 95px;
+}
+.services-button {
+	background-color: transparent;
+    border: 2px #23aae2 solid;
+    border-radius: 5px;
+    color: #23aae2;
+    padding: 22px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Museo;
+    font-weight: bold;
+    cursor: pointer;
+}
+.services-button:hover {
+	opacity: .7;
+}
+
+/* comments section */
+.carousel-indicators {
+	top: 317px;
+}
+.carousel-indicators .active {
+	background-color: #23aae2;
+}
+.carousel-indicators li {
+	width: 19px;
+	height: 19px;
+	border: 1px dashed #23aae2;
+	border-radius: 50%;
+}
+.carousel-control-prev, .carousel-control-next {
+	opacity: 1;
+	top: 100px;
+}
+.carousel-control-prev {
+	left: -34px;
+}
+.carousel-control-next {
+	right: -29px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	width: auto;
+	height: auto;
+}
+.comment-section {
+	padding: 80px 0 190px;
+}
+.comment-main-text h2 {
+	font-size: 42px;
+	font-weight: bold;
+}
+.comments-field {
+	padding: 102px 0 0 52px;
+}
+.diana-photo {
+	margin: 0 0 0 62px;
+}
+.dianas-comment {
+	margin-left: 60px;
+}
+.dianas-comment h3 {
+	font-size: 16px;
+	font-weight: bold;
+	padding-right: 40px;
+	color: #222;
+}
+.dianas-comment a {
+	font-size: 12px;
+	font-family: Museo;
+	font-weight: bold;
+	color: #23aae2;
+	padding-right: 140px;
+}
+.dianas-comment span {
+	font-size: 12px;
+	font-family: Museo;
+	font-weight: bold;
+	color: #23aae2;
+}
+.dianas-comment p {
+	font-size: 14px;
+	font-family: Museo;
+	font-weight: 300;
+	font-style: italic;
+	color: #363636;
+	padding: 0 155px 0 0;
+}
+.pagination-circles {
+	margin: 85px 0 0;
+}
+.pagination-circles img {
+	margin: 0 5px;
+}
+
+	/* Секция "Вопросы по преезду в Болгарию" */
+
+.questions-section {
+	background: url('../img/questions-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 68.5px; 
+	position: relative;
+}
+.question-background {
+	background: url('../img/question-background.png');
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.question-main-words {
+	margin: 82px 0 0;
+}
+.question-main-words div h2 {
+	font-weight: 900;
+	color: #ffffff;
+}
+.question-sub-words {
+	margin: 5px 0 0;
+}
+.question-sub-words p {
+	font-family: Museo;
+	font-weight: 100;
+	color: #ffffff;
+	font-size: 21px;
+	text-transform: uppercase;
+	padding: 0 25px;
+	margin: 0 0 34px;
+}
+.question-sub-words div img {
+	border: 1px #ffffff dotted;
+	border-radius: 180px;
+	padding: 14px 11px 12px;
+}
+.question-inputs {
+	margin: 23.5px 0 0;
+}
+.question-input {
+	background-color: #30c2ff;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 26px 35px;
+	margin: 4.5px 0;
+}
+.question-input:focus {
+	box-shadow: 0px 0px 30px #119ad3;
+	border-color: #ffffff;
+	color: #ffffff;
+}
+.question-input::placeholder {
+	color: #cdcdcd;
+}
+.question-input:focus::placeholder {
+	color: #ffffff;
+}
+.question-submit {
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 5px;
+	padding: 26px 35px;
+	margin: 15.5px 0;
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 15px;
+	font-family: Museo;
+	font-weight: 900;
+}
+
+
+footer {
+	background: url('../img/footer-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.all-rights-reserved p {
+	color: #faf7f7;
+	font-size: 14px;
+	font-family: Museo;
+	font-weight: 100;
+	margin: 0;
+}
+.all-rights-reserved {
+	display: flex; 
+	align-items: center;
+	height: 100%;
+}
+.privacy-and-policy {
+	display: flex; 
+	align-items: center;
+	height: 100%;
+}
+.privacy-and-policy p {
+	color: #faf7f7;
+	font-size: 14px;
+	font-family: Museo;
+	font-weight: 100;
+	margin: 0;
+	border-bottom: 1px dotted #faf7f7;
+}
+.footer-phone {
+	margin: 0 15px 0 0;
+}
+.footer-phone img {
+	border: 2px dotted #ffffff;
+	border-radius: 180px; 
+	padding: 5px 5px 6px 6px;
+}
+.footer-numbers {
+	margin: 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: Museo;
+	font-weight: bold;
+}	
+.footer-numbers a {
+	text-decoration: none;
+	color: #ffffff;
+}
