@@ -1,1 +1,1 @@
-# HTML, CSS static websites
+# HTML, CSS, JS static websites
