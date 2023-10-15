@@ -1,0 +1,94 @@
+.form__group {
+    position: relative;
+    margin: 8px 0;
+    padding: 15px 0;
+}
+// Input
+.form__field {
+    padding: 7px 0;
+    font-family: inherit;
+    font-size: 30px;
+    width: 100%;
+    border: 0;
+    border-bottom: 0.5px solid $base;
+    outline: 0;
+    color: $base-light;
+    background: transparent;
+    transition: border-color 0.2s;
+    &::placeholder {
+        color: transparent;
+    }
+    &:placeholder-shown ~ .form__label {
+        cursor: text;
+        top: 20px;
+    }
+}
+.form__label {
+    display: block;
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    color: $base;
+    transition: 0.2s;
+}
+.form__field:focus {
+    padding-bottom: 6px;  
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+    ~ .form__label {
+        display: block;
+        position: absolute;
+        top: 0;
+        font-size: 1rem;
+        color: #11998e; 
+        font-weight:500;
+        transition: 0.2s;
+    }
+}
+.form__field {
+    &:required, &:invalid { 
+        box-shadow: none; 
+    }
+}
+// Checkbox
+.form__checkbox {
+    position: relative;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $base;
+    cursor: pointer;
+    &:checked {
+        background: $secondary;
+    }
+}
+.checkbox__label {
+    margin-left: 10px;
+    color: $base;
+    font-size: 18px;
+}
+
+/*
+* RESPONSIVE
+*/
+
+/* Extra small devices (phones, 640px and down) */
+@media only screen and (max-width: 640px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 640px and up) @s */
+@media only screen and (min-width: 640px) {
+    
+}
+
+/* Large devices (laptops/desktops, 960px and up) @m */
+@media only screen and (min-width: 960px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) @l */
+@media only screen and (min-width: 1200px) {
+    
+}
