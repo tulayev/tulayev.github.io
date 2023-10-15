@@ -369,7 +369,7 @@ a, a:hover {
 }
 
 .construction__main {
-  padding: 60px 0 30px 0;
+  padding-top: 60px;
 }
 .construction__main__title {
   font-size: 45px;
@@ -426,6 +426,108 @@ a, a:hover {
   padding-top: 18px;
   border-top: 1px solid #878787;
   color: #FFFFFF;
+  font-size: 14px;
+}
+
+.partner {
+  padding-top: 30px;
+}
+.partner__title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.partner__block {
+  border: 1px solid #878787;
+}
+
+.why-us {
+  padding-top: 30px;
+}
+.why-us__title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.why-us__block {
+  padding-top: 12px;
+}
+.why-us__block div:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #F9290D;
+  border-radius: 50%;
+  color: #F9290D;
+  font-size: 14px;
+  font-weight: 500;
+}
+.why-us__block div:nth-child(2) {
+  margin-top: 24px;
+  border-top: 1px solid #878787;
+}
+.why-us__block div:nth-child(2) p {
+  padding-top: 18px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.pdf {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F9290D;
+}
+.pdf__title {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.pdf__title span {
+  text-decoration: underline;
+  font-style: italic;
+}
+.pdf__blocks {
+  margin-top: 30px;
+}
+.pdf__block div {
+  color: #FFFFFF;
+  padding-bottom: 24px;
+}
+.pdf__block div img {
+  margin-right: 8px;
+}
+.pdf__block p {
+  border-top: 1px solid #FFFFFF;
+  padding-top: 18px;
+  color: #FFFFFF;
+}
+
+.why-batteries {
+  padding-top: 164px;
+}
+.why-batteries__title {
+  font-size: 124px;
+  line-height: 130px;
+  margin-bottom: 30px;
+}
+.why-batteries__block {
+  padding-top: 12px;
+}
+.why-batteries__block div:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #F9290D;
+  border-radius: 50%;
+  color: #F9290D;
+  font-size: 14px;
+  font-weight: 500;
+}
+.why-batteries__block div:nth-child(2) {
+  margin-top: 24px;
+  border-top: 1px solid #878787;
+}
+.why-batteries__block div:nth-child(2) p {
+  padding-top: 18px;
+  padding-right: 10px;
   font-size: 14px;
 }
 
@@ -788,6 +890,65 @@ a, a:hover {
   .main__sub-items > .item-4 {
     justify-content: end;
   }
+  .construction__main {
+    padding-top: 100px;
+  }
+  .construction__main__title {
+    font-size: 60px;
+  }
+  .construction__main__sub {
+    margin-top: 28px;
+    padding-top: 20px;
+  }
+  .construction__main img {
+    margin-top: 100px;
+  }
+  .construction__reliability {
+    padding: 100px 0;
+  }
+  .construction__reliability__title {
+    font-size: 48px;
+  }
+  .construction__reliability__blocks img {
+    width: 72px;
+  }
+  .construction__reliability__blocks p {
+    margin-top: 10px;
+  }
+  .construction__dominant {
+    padding: 64px 0;
+  }
+  .construction__dominant__title {
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  .construction__dominant__block {
+    padding: 32px 0;
+  }
+  .partner {
+    padding-top: 100px;
+  }
+  .partner__title {
+    font-size: 60px;
+    padding-bottom: 32px;
+  }
+  .why-us {
+    padding-top: 100px;
+  }
+  .why-us__title {
+    font-size: 60px;
+    margin-bottom: 32px;
+  }
+  .why-us__block {
+    padding: 30px 0px;
+  }
+  .service {
+    padding: 100px 0;
+  }
+  .service__title {
+    font-size: 60px;
+    margin-bottom: 32px;
+  }
   .service__item {
     height: 150px;
   }
@@ -796,6 +957,20 @@ a, a:hover {
   }
   .service img {
     width: 50px;
+  }
+  .contact {
+    padding: 70px 0;
+  }
+  .contact__title {
+    font-size: 60px;
+    padding-bottom: 32px;
+  }
+  .contact form {
+    margin-top: 30px;
+  }
+  .contact form button {
+    width: 120px;
+    height: 120px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) @l */
@@ -820,7 +995,7 @@ a, a:hover {
     font-size: 22px;
   }
   .construction__main {
-    padding: 220px 0 164px 0;
+    padding-top: 220px;
   }
   .construction__main__title {
     line-height: 136px;
@@ -856,6 +1031,65 @@ a, a:hover {
   }
   .construction__dominant__block {
     padding: 32px 0;
+  }
+  .partner {
+    padding-top: 164px;
+  }
+  .partner__title {
+    font-size: 124px;
+    line-height: 130px;
+    padding-bottom: 42px;
+  }
+  .why-us {
+    padding-top: 164px;
+  }
+  .why-us__title {
+    font-size: 124px;
+    line-height: 130px;
+    margin-bottom: 42px;
+  }
+  .why-us__block {
+    padding: 32px 0px;
+  }
+  .pdf {
+    margin-top: 164px;
+    padding-top: 72px;
+    padding-bottom: 86px;
+  }
+  .pdf__title {
+    font-size: 84px;
+    line-height: 88px;
+  }
+  .pdf__blocks {
+    margin-top: 213px;
+  }
+  .pdf__block div {
+    padding-bottom: 24px;
+  }
+  .pdf__block div img {
+    margin-right: 8px;
+  }
+  .pdf__block p {
+    padding-top: 18px;
+  }
+  .why-batteries {
+    padding-top: 164px;
+  }
+  .why-batteries__title {
+    font-size: 124px;
+    line-height: 130px;
+    margin-bottom: 30px;
+  }
+  .why-batteries__block {
+    padding-top: 12px;
+  }
+  .why-batteries__block div:nth-child(2) {
+    margin-top: 24px;
+  }
+  .why-batteries__block div:nth-child(2) p {
+    padding-top: 18px;
+    padding-right: 10px;
+    font-size: 14px;
   }
   .company {
     min-height: 1060px;

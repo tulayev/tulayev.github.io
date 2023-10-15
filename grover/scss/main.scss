@@ -134,7 +134,7 @@
 
 .construction {
     &__main {
-        padding: 60px 0 30px 0;
+        padding-top: 60px;
         &__title {
             font-size: 45px;
             div:nth-child(2) {
@@ -193,6 +193,110 @@
                 padding-top: 18px;
                 border-top: 1px solid $base;
                 color: $base-light;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.partner {
+    padding-top: 30px;
+    &__title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    &__block {
+        border: 1px solid $base;
+    }
+}
+
+.why-us {
+    padding-top: 30px;
+    &__title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    &__block {
+        padding-top: 12px;
+        div:nth-child(1) {
+            width: 30px;
+            height: 30px;
+            background-color: $base-light;
+            border: 1px solid $secondary;
+            border-radius: 50%;
+            color: $secondary;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        div:nth-child(2) {
+            margin-top: 24px;
+            border-top: 1px solid $base;
+            p {
+                padding-top: 18px;
+                padding-right: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.pdf {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $secondary;
+    &__title {
+        font-size: 24px;
+        color: $base-light;
+        span {
+            text-decoration: underline;
+            font-style: italic;
+        }
+    }
+    &__blocks {
+        margin-top: 30px;
+    }
+    &__block {
+        div {
+            color: $base-light;
+            padding-bottom: 24px;
+            img {
+                margin-right: 8px;
+            }
+        }
+        p {
+            border-top: 1px solid $base-light;
+            padding-top: 18px;
+            color: $base-light;
+        }
+    }
+}
+
+.why-batteries {
+    padding-top: 164px;
+    &__title {
+        font-size: 124px;
+        line-height: 130px;
+        margin-bottom: 30px;
+    }
+    &__block {
+        padding-top: 12px;
+        div:nth-child(1) {
+            width: 30px;
+            height: 30px;
+            background-color: $base-light;
+            border: 1px solid $secondary;
+            border-radius: 50%;
+            color: $secondary;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        div:nth-child(2) {
+            margin-top: 24px;
+            border-top: 1px solid $base;
+            p {
+                padding-top: 18px;
+                padding-right: 10px;
                 font-size: 14px;
             }
         }
@@ -588,7 +692,73 @@
         }
     }  
 
+    .construction {
+        &__main {
+            padding-top: 100px;
+            &__title {
+                font-size: 60px;
+            }
+            &__sub {
+                margin-top: 28px;
+                padding-top: 20px;
+            } 
+            img {
+                margin-top: 100px;
+            }
+        }
+
+        &__reliability {
+            padding: 100px 0;
+            &__title {
+                font-size: 48px;
+            }
+            &__blocks {
+                img {
+                    width: 72px;
+                }
+                p {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &__dominant {
+            padding: 64px 0;
+            &__title {
+                font-size: 36px;
+                margin-bottom: 32px;
+            }
+            &__block {
+                padding: 32px 0;
+            }
+        }
+    }
+
+    .partner {
+        padding-top: 100px;
+        &__title {
+            font-size: 60px;
+            padding-bottom: 32px;
+        }
+    }
+
+    .why-us {
+        padding-top: 100px;
+        &__title {
+            font-size: 60px;
+            margin-bottom: 32px;
+        }
+        &__block {
+            padding: 30px 0px;
+        }
+    }  
+
     .service {
+        padding: 100px 0;
+        &__title {
+            font-size: 60px;
+            margin-bottom: 32px;
+        }
         &__item {
             height: 150px;
         }
@@ -597,6 +767,22 @@
         }
         img {
             width: 50px;
+        }
+    }
+
+    .contact {
+        padding: 70px 0;
+        &__title {
+            font-size: 60px;
+            padding-bottom: 32px;
+        }
+        // Input
+        form {
+            margin-top: 30px;
+            & button {
+                width: 120px;
+                height: 120px;
+            }
         }
     }
 }
@@ -626,7 +812,7 @@
 
     .construction {
         &__main {
-            padding: 220px 0 164px 0;
+            padding-top: 220px;
             &__title {
                 line-height: 136px;
                 font-size: 148px;
@@ -665,6 +851,71 @@
             }
             &__block {
                 padding: 32px 0;
+            }
+        }
+    }
+
+    .partner {
+        padding-top: 164px;
+        &__title {
+            font-size: 124px;
+            line-height: 130px;
+            padding-bottom: 42px;
+        }
+    }
+
+    .why-us {
+        padding-top: 164px;
+        &__title {
+            font-size: 124px;
+            line-height: 130px;
+            margin-bottom: 42px;
+        }
+        &__block {
+            padding: 32px 0px;
+        }
+    }
+    
+    .pdf {
+        margin-top: 164px;
+        padding-top: 72px;
+        padding-bottom: 86px;
+        &__title {
+            font-size: 84px;
+            line-height: 88px;
+        }
+        &__blocks {
+            margin-top: 213px;
+        }
+        &__block {
+            div {
+                padding-bottom: 24px;
+                img {
+                    margin-right: 8px;
+                }
+            }
+            p {
+                padding-top: 18px;
+            }
+        }
+    }
+    
+    .why-batteries {
+        padding-top: 164px;
+        &__title {
+            font-size: 124px;
+            line-height: 130px;
+            margin-bottom: 30px;
+        }
+        &__block {
+            padding-top: 12px;
+            div:nth-child(2) {
+                margin-top: 24px;
+                p {
+                    padding-top: 18px;
+                    padding-right: 10px;
+                    font-size: 14px;
+                }
             }
         }
     }
