@@ -1,1 +1,0 @@
-# Simple shopping cart simpulator with redux-toolkit
