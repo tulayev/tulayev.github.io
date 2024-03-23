@@ -1,17 +1,13 @@
-const global = {
-    currentPage: window.location.pathname,
-    search: {
-        term: '',
-        type: '',
-        page: 1,
-        totalPages: 1,
-        totalResults: 0,
-    },
-    api: {
-        apiUrl: 'https://api.themoviedb.org/3/',
-        apiKey: '' // paste your API key here
-    }
-}
+import { global } from './global.js'
+import { 
+    fetchApiData, 
+    searchApiData, 
+    initSwiper,
+    showAlert,
+    highlightActiveLink,
+    addCommasToNumber, 
+    setBackgroundImage
+} from './functions.js'
 
 async function displayPopularMovies() {
     const { results } = await fetchApiData('movie/popular')
@@ -81,7 +77,7 @@ async function displayMovieDetails() {
     const movieId = window.location.search.split('=').pop()
     const movie = await fetchApiData(`movie/${movieId}`)
 
-    displayBackgroundImage('movie', movie.backdrop_path)
+    setBackgroundImage('movie', movie.backdrop_path)
 
     const div = document.createElement('div')
     div.innerHTML = `
@@ -137,7 +133,7 @@ async function displayShowDetails() {
     const showId = window.location.search.split('=').pop()
     const show = await fetchApiData(`tv/${showId}`)
 
-    displayBackgroundImage('tv', show.backdrop_path)
+    setBackgroundImage('tv', show.backdrop_path)
 
     const div = document.createElement('div')
     div.innerHTML = `
@@ -234,36 +230,37 @@ async function displaySlider() {
     })
 }
 
-async function fetchApiData(endpoint) {
-    const { api } = global
-    try {
-        showSpinner()
-        const response = await fetch(`${api.apiUrl}/${endpoint}?api_key=${api.apiKey}&language=en-US`)
-        const data = await response.json()
-        hideSpinner()
-        return data
-    }
-    catch (err) {
-        hideSpinner()
-        console.log(err)
-    }
-} 
+function displayPagination() {
+    const div = document.createElement('div')
+    
+    div.classList.add('pagination')
+    div.innerHTML = `
+        <button class="btn btn-primary" id="prev">Prev</button>
+        <button class="btn btn-primary" id="next">Next</button>
+        <div class="page-counter">Page ${global.search.page} of ${global.search.totalPages}</div>
+    `
+    document.querySelector('#pagination').appendChild(div)
 
-async function searchApiData() {
-    const { api } = global
-    try {
-        showSpinner()
-        const query = `${api.apiUrl}search/${global.search.type}?api_key=${api.apiKey}&language=en-US&query=${global.search.term}&page=${global.search.page}`
-        const response = await fetch(query)
-        const data = await response.json()
-        hideSpinner()
-        return data
+    if (global.search.page === 1) {
+        document.querySelector('#prev').disabled = true
     }
-    catch (err) {
-        hideSpinner()
-        console.log(err)
+
+    if (global.search.page === global.search.totalPages) {
+        document.querySelector('#next').disabled = true
     }
-} 
+
+    document.querySelector('#prev').addEventListener('click', async () => {
+        global.search.page--
+        const { results } = await searchApiData()
+        displaySearchResults(results)
+    })
+    
+    document.querySelector('#next').addEventListener('click', async () => {
+        global.search.page++
+        const { results } = await searchApiData()
+        displaySearchResults(results)
+    })
+}
 
 function displaySearchResults(results) {
     document.querySelector('#searchResults').innerHTML = ''
@@ -309,112 +306,6 @@ function displaySearchResults(results) {
 
     displayPagination()
 }
-
-function showSpinner() {
-    document.querySelector('.spinner').classList.add('show')
-}
-
-function hideSpinner() {
-    document.querySelector('.spinner').classList.remove('show')
-}
-
-function highlightActiveLink() {
-    const links = document.querySelectorAll('.nav-link')
-    links.forEach(link => {
-        if (link.getAttribute('href') === global.currentPage) {
-            link.classList.add('active')
-        }
-    })
-}
-
-function addCommasToNumber(number) {
-    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
-}
-
-function displayBackgroundImage(type, backgroundImagePath) {
-    const overlayDiv = document.createElement('div')
-    overlayDiv.style.backgroundImage = `url(https://image.tmdb.org/t/p/original/${backgroundImagePath})`
-    overlayDiv.style.backgroundSize = 'cover'
-    overlayDiv.style.backgroundPosition = 'center'
-    overlayDiv.style.backgroundRepeat = 'no-repeat'
-    overlayDiv.style.height = '100vh'
-    overlayDiv.style.width = '100vw'
-    overlayDiv.style.position = 'absolute'
-    overlayDiv.style.top = '0'
-    overlayDiv.style.left = '0'
-    overlayDiv.style.zIndex = '-1'
-    overlayDiv.style.opacity = '0.1'
-
-    type === 'movie' 
-        ? document.querySelector('#movieDetails').appendChild(overlayDiv)
-        : document.querySelector('#showDetails').appendChild(overlayDiv)
-}
-
-function showAlert(message, className) {
-    const alertElement = document.createElement('div')
-    alertElement.classList.add('alert', className)
-    alertElement.appendChild(document.createTextNode(message))
-    document.querySelector('#alert').appendChild(alertElement)
-
-    setTimeout(() => alertElement.remove(), 3000)
-}
-
-function displayPagination() {
-    const div = document.createElement('div')
-    
-    div.classList.add('pagination')
-    div.innerHTML = `
-        <button class="btn btn-primary" id="prev">Prev</button>
-        <button class="btn btn-primary" id="next">Next</button>
-        <div class="page-counter">Page ${global.search.page} of ${global.search.totalPages}</div>
-    `
-    document.querySelector('#pagination').appendChild(div)
-
-    if (global.search.page === 1) {
-        document.querySelector('#prev').disabled = true
-    }
-
-    if (global.search.page === global.search.totalPages) {
-        document.querySelector('#next').disabled = true
-    }
-
-    document.querySelector('#prev').addEventListener('click', async () => {
-        global.search.page--
-        const { results, total_pages } = await searchApiData()
-        displaySearchResults(results)
-    })
-    
-    document.querySelector('#next').addEventListener('click', async () => {
-        global.search.page++
-        const { results, total_pages } = await searchApiData()
-        displaySearchResults(results)
-    })
-}
-
-function initSwiper() {
-    new Swiper('.swiper', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        freeMode: true,
-        loop: true, 
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false
-        },
-        breakpoints: {
-            500: {
-                slidesPerView: 2
-            },
-            700: {
-                slidesPerView: 3
-            },
-            1200: {
-                slidesPerView: 4
-            }
-        }
-    })
-}
-
 /*
 Init App
 */
